@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>services</title>
+    <link rel="stylesheet" href="act.css">
+</head>
+
+<body>
+    
+    <body>
+        <p>You are logged in.</p>
+        <form method="POST" action="logout.php">
+            <button type="submit">Logout</button>
+        </form>
+        <div class="containerr">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Activities</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        
+                    </ul>
+                </nav>
+            </header>
+    
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>SERVICES</h1>
+                </div>
+            </section>
+    
+            <div class="request-container">
+                <!-- First Request Card -->
+                <div class="request-card">
+                    <div class="request-title">Create new tourism and travel agency</div>
+                    <div class="request-actions">
+                        <i class="fas fa-file-alt"></i>
+                        <i class="fas fa-info-circle"></i>
+                        <span class="request-button" data-modal="modal1">Submit</span>
+                    </div>
+                </div>
+    
+                <!-- Second Request Card -->
+                <div class="request-card">
+                    <div class="request-title">Create a new Branch for your Agency</div>
+                    <div class="request-actions">
+                        <i class="fas fa-file-alt"></i>
+                        <i class="fas fa-info-circle"></i>
+                        <span class="request-button" data-modal="modal2">Submit</span>
+                    </div>
+                </div>
+
+                <!-- third  request card... -->
+         <div class="request-card">
+            <div class="request-title">Change of address/location </div>
+            <div class="request-actions">
+                <i class="fas fa-file-alt"></i>
+                <i class="fas fa-info-circle"></i>
+                <span class="request-button" data-modal="modal3">Submit</span>
+            </div>
+        </div>
+        <!-- fourth request cards... -->
+        <div class="request-card">
+        <div class="request-title">Request to operate a hotel establishment</div>
+        <div class="request-actions">
+            <i class="fas fa-file-alt"></i>
+            <i class="fas fa-info-circle"></i>
+            <span class="request-button" data-modal="modal4">Submit</span>
+        </div>
+    </div>
+     <!-- 5 request cards... -->
+        <!-- Fifth Request Card -->
+        <div class="request-card">
+            <div class="request-title">Create a new Branch for hotel establishment</div>
+            <div class="request-actions">
+                <i class="fas fa-file-alt"></i>
+                <i class="fas fa-info-circle"></i>
+                <span class="request-button" data-modal="modal5">Submit</span>
+            </div>
+        </div>
+    
+        <!-- Sixth Request Card -->
+        <div class="request-card">
+            <div class="request-title">Change of address/location(Hotel)</div>
+            <div class="request-actions">
+                <i class="fas fa-file-alt"></i>
+                <i class="fas fa-info-circle"></i>
+                <span class="request-button" data-modal="modal6">Submit</span>
+            </div>
+        </div>
+    
+        <!-- Seventh Request Card -->
+        <div class="request-card">
+            <div class="request-title">Request to Become a Tourist Guide</div>
+            <div class="request-actions">
+                <i class="fas fa-file-alt"></i>
+                <i class="fas fa-info-circle"></i>
+                <span class="request-button" data-modal="modal7">Submit</span>
+            </div>
+        </div>
+
+    
+             
+               
+    
+            <!-- First Modal -->
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-close="modal1">&times;</span>
+                    
+                    <form action="submit_agency.php" method="POST">
+                        <label for="agency_name">Agency Name</label>
+                        <input type="text" id="agency_name" name="agency_name" required><br>
+                    
+                        <label for="agency_address">Agency Address</label>
+                        <input type="text" id="agency_address" name="agency_address" required><br>
+                    
+                        <label for="owner_name">Owner Name</label>
+                        <input type="text" id="owner_name" name="owner_name" required><br>
+                    
+                        <label for="license_number">License Number</label>
+                        <input type="text" id="license_number" name="license_number" required><br>
+                    
+                        <label for="date_of_birth">Date of Birth</label>
+                        <input type="date" id="date_of_birth" name="date_of_birth" required><br>
+                    
+                        <label for="country_of_birth">Country of Birth</label>
+                        <input type="text" id="country_of_birth" name="country_of_birth" required><br>
+                    
+                        <label for="applicant_address">Applicant's Address</label>
+                        <input type="text" id="applicant_address" name="applicant_address" required><br>
+                    
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required><br>
+                    
+                        <label for="mobile_phone_number">Mobile Phone Number</label>
+                        <input type="text" id="mobile_phone_number" name="mobile_phone_number" required><br>
+                    
+                        <input type="submit" value="Submit">
+                    </form>
+                    
+                </div>
+            </div>
+    
+            <!-- Second Modal -->
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-close="modal2">&times;</span>
+                    <form action="creat new branch for your agency.php" method="POST">
+                        <label for="Agency Name">Agency Name</label>
+                        <input type="text" id="Agency Name" name="agency_name" required><br>
+                    
+                        <label for="Agency address">Agency Address</label>
+                        <input type="text" id="Agency address" name="agency_address" required><br>
+                    
+                        <label for="branch-name">Branch Name</label>
+                        <input type="text" id="branch-name" name="branch_name" required><br>
+                    
+                        <label for="branch_location">Branch Location</label>
+                        <input type="text" id="branch_location" name="branch_location" required><br>
+                    
+                        <label for="owner-name">Owner Name</label>
+                        <input type="text" id="owner-name" name="owner_name" required><br>
+                    
+                        <label for="license-number">License Number</label>
+                        <input type="text" id="license-number" name="license_number" required><br>
+                    
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+    
+           <!-- MODEL3. -->
+         <div id="modal3" class="modal">
+            <div class="modal-content">
+                <span class="close" data-close="modal3">&times;</span>
+                <h2>Change of address/location  </h2>
+                
+                    <form action="address.php" method="POST">
+                    <label for="Agency Name">Agency Name</label>
+                    <input type="text" id="Agency Name" name="Agency Name" required>
+
+                    <label for="owner name">Owner Name</label>
+                    <input type="text" id="owner-name" name="owner-name" required><br>
+
+                    <label for="license-number">License Number</label>
+                    <input type="text" id="license-number" name="license-number" required><br>
+
+                    <label for="Agency accreditation number">Agency accreditation number</label>
+                    <input type="text" id="Agency_accreditation_number" name="Agency_accreditation_number" required><br>
+
+                    <label for="Agency">Agency Branch/ Agency Headquarter</label>
+                    <input type="text" id="Agency" name="Agency" required><br>
+
+                    <label for="Old address">Old address</label>
+                    <input type="text" id="old_address" name="old_address" required><br>
+
+                    <label for="New address">New address</label>
+                    <input type="text" id="new_address" name="new_address" required><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+           <!-- MODEL4. -->
+
+        <div id="modal4" class="modal">
+            <div class="modal-content">
+                <span class="close" data-close="modal4">&times;</span>
+                <h2>Request to operate a hotel establishment</h2>
+                <form id="form4" method="POST" action="establishment.php">
+                    <label for="Hotel Establishment Name">Hotel Establishment Name</label>
+                    <input type="text" id="hotel_name" name="hotel_name" required>
+                
+                    <label for="Hotel Establishment address">Hotel Establishment address</label>
+                    <input type="text" id="hotel_address" name="hotel_address" required><br>
+                
+                    <label for="Ownership/rent">Ownership/rent</label>
+                    <input type="text" id="ownership_rent" name="ownership_rent" required>
+                
+                    <label for="owner name">Owner Name</label>
+                    <input type="text" id="owner_name" name="owner_name" required><br>
+                
+                    <label for="license-number">License Number</label>
+                    <input type="text" id="license_number" name="license_number" required><br>
+                
+                    <label for="date of birth">Date of Birth</label>
+                    <input type="date" id="date_of_birth" name="date_of_birth" required><br>
+                
+                    <label for="Country of birth">Country of birth</label>
+                    <input type="text" id="country_of_birth" name="country_of_birth" required><br>
+                
+                    <label for="Applicant's address">Applicant's address</label>
+                    <input type="text" id="applicant_address" name="applicant_address" required><br>
+                
+                    <label for="Email">Email</label>
+                    <input type="email" id="email" name="email" required><br>
+                
+                    <label for="Mobile phone number">Mobile phone number</label>
+                    <input type="text" id="mobile_phone_number" name="mobile_phone_number" required><br>
+                    
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            </div>
+    
+            <!-- Modal 5 -->
+            
+        <div id="modal5" class="modal">
+            <div class="modal-content">
+                <span class="close" data-close="modal5">&times;</span>
+                
+                <h2>Create a new Branch for hotel establishment</h2>
+                
+                <form action="ytiroop.php" id="form5">
+                <label for="hotel establishment Name">hotel establishment Name</label>
+                <input type="text" id="hotel_establishment_Name" name="hotel_establishment-_Name" required>
+
+                <label for="hotel establishment address">hotel establishment address</label>
+                <input type="text" id="hotel_establishment_address" name="hotel_establishment_address" required><br>
+
+                <label for="Ownership/rent">Ownership/rent</label>
+                <input type="text" id="Ownership_rent" name="Ownership_rent" required>
+
+                <label for="hotel  Branch Name">hotel  Branch Name:</label>
+                <input type="text" id="hotel_Branch_Name" name="hotel_Branch_Name" required><br>
+
+                <label for="Branch Location">Branch Location:</label>
+                <input type="text" id="Branch_Location" name="Branch_Location" required><br>
+
+                <label for="owner name">Owner Name</label>
+                <input type="text" id="owner_name" name="owner_name" required><br>
+
+                <label for="license-number">License Number</label>
+                <input type="text" id="license_number" name="license_number" required><br>
+        
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        
+        <!-- Modal 6 -->
+        <div id="modal6" class="modal">
+            <div class="modal-content">
+                <span class="close" data-close="modal6">&times;</span>
+                <h2>Change of address/location(Hotel)</h2>
+                <form id="form6" action="address_location.php" method="POST">
+                <label for="hotel establishment Name">hotel establishment Name</label>
+                <input type="text" id="hotel_establishment_Name" name="hotel_establishment_Name" required>
+
+                <label for="owner name">Owner Name</label>
+                <input type="text" id="owner_name" name="owner_name" required><br>
+
+                <label for="license-number">License Number</label>
+                <input type="text" id="license_number" name="license_number" required><br>
+
+                <label for="hotel establishment accreditation number">hotel establishment accreditation number</label>
+                <input type="text" id="hotel_establishment_accreditation_number" name="hotel_establishment_accreditation_number" required><br>
+
+                <label for="Hotel Branch/ Hotel Headquarter">Hotel Branch/ Hotel Headquarter</label>
+                <input type="text" id="Agency_Branch_Agency_Headquarter" name="Agency_Branch_Agency_Headquarter" required><br>
+
+                <label for="Old address">Old address</label>
+                <input type="text" id="Old_address" name="Old_address" required><br>
+
+                <label for="New address">New address</label>
+                <input type="text" id="New_address" name="New_address" required><br>
+        
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        
+        <!-- Modal 7 -->
+        <div id="modal7" class="modal">
+            <div class="modal-content">
+                <span class="close" data-close="modal7">&times;</span>
+                <h2>Request to Become a Tourist Guide</h2>
+                <form id="form7" action="fillname.php" method="POST">
+                    <label for="full-name">Full Name</label>
+                   <input type="text" id="full_name" name="full_name" required><br>
+
+                   <label for="date-of-birth">Date of Birth</label>
+                   <input type="date" id="date_of_birth" name="date_of_birth" required><br>
+
+                   <label for="nationality">Nationality</label>
+                   <input type="text" id="nationality" name="nationality" required><br>
+
+                   <label for="id-number">National ID/Passport Number</label>
+                   <input type="text" id="id_number" name="id_number" required><br>
+
+                    <label for="contact-info">Contact Information</label>
+                    <input type="text" id="contact_info" name="contact_info" required><br>
+
+                    <label for="education-level">Highest Level of Education</label>
+                    <input type="text" id="education_level" name="education_level" required><br>
+
+                    <label for="languages">Languages Spoken</label>
+                    <input type="text" id="languages" name="languages" required><br>
+        
+                    <input type="submit" value="Submit">
+                 </form>
+              </div>
+            </div>
+
+        <script>
+            // Get all the modals
+            const modals = document.querySelectorAll('.modal');
+    
+            // Get all the request buttons
+            const requestButtons = document.querySelectorAll('.request-button');
+    
+            // Get all the close buttons
+            const closeButtons = document.querySelectorAll('.close');
+    
+            // Open modal when request button is clicked
+            requestButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const modalId = button.getAttribute('data-modal');
+                    document.getElementById(modalId).style.display = 'block';
+                });
+            });
+    
+            // Close modal when close button is clicked
+            closeButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const modalId = button.getAttribute('data-close');
+                    document.getElementById(modalId).style.display = 'none';
+                });
+            });
+    
+            // Close modal if user clicks outside the modal content
+            window.onclick = function(event) {
+                modals.forEach(modal => {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                });
+            }
+        </script>
+    </body>

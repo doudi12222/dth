@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direction of Tourism & Handicrafts</title>
+    <link rel="stylesheet" href="contact us.css">
+</head>
+<body>
+    <div class="top-header">
+        <div class="social-icons">
+            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://x.com/dtabiskra"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.facebook.com/DirectionTABiskra/"><i class="fa-brands fa-facebook"></i></a>
+            
+        </div>
+        <div class="contact-info">
+            <span><i class="fa-solid fa-location-dot"></i></i> Cité EL Moudjahidin route nationale n ° 03 vers Batna</span>
+            <span><i class="fa-solid fa-envelope"></i><a href="mailto:dta.biskra@mta.gov.dz">dta.biskra@mta.gov.dz</a></span>
+             <span><i class="fa-solid fa-phone"></i> +213 33 65 74 64</span>
+        </div>
+    </div>
+    <div class="container">
+        <nav>
+          <div class="logo">
+            <a href="home.html">Direction <span>of</span> Tourism <span>&</span> Handicrafts </a>
+          </div>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="login.html">Services</a></li>
+            <li><a href="contact us.html">Contact Us</a></li>
+          </ul>
+          <div class="buttons">
+            <a href="login.html" class="login">Log in</a>
+            <a href="Register.html" class="btn">Register</a>
+          </div>
+        </nav>
+        <div class="content1">
+       <center><h2 >Contact  Us </h2></center> 
+      
+      </div>
+    </div>
+      </div>
+      <br>
+      <br>
+     <center><div class="con">
+        <div class="text-left">
+            <h2>HOW CAN WE HELP YOU?</h2>
+            <br>
+            <p>WE PROVIDE YOU WITH ALL MEANS OF COMMUNICATION. YOU CAN QUICKLY SEND US AN EMAIL VIA THE CONTACT
+                FORM.</p>
+        </div></div></center>
+        <div class="text-right">
+            <h2>ADDRESS</h2>
+            <p>CITE EL MOUDJAHIDIN ROUTE NATIONALE N° 03 VERS BATNA<br>
+        </div>
+      
+
+    </div>
+    <br>
+    <br>
+    <div class="container1">
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d526.5218031274501!2d5.717602587710682!3d34.863390410968414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12f509407f3b4725%3A0x80869883942db32e!2z2YXYr9mK2LHZitipINin2YTYs9mK2KfYrdipINmI2KfZhNi12YbYp9i52Kkg2KfZhNiq2YLZhNiv2YrYqSDYqNiz2YPYsdip!5e0!3m2!1sfr!2sdz!4v1718018785272!5m2!1sfr!2sdz"
+                width="600" height="530" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="contact-container">
+            <h1>Contact Us</h1>
+            <form id="contactForm" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="Object">Object</label>
+                    <textarea id="Object" name="Object" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+            <div id="responseMessage"></div>
+        </div>
+        
+        <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();  // Prevent the default form submission
+        
+            var formData = new FormData(this);
+        
+            // Send the form data using fetch API
+            fetch('POST.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                var messageBox = document.getElementById('responseMessage');
+                if (data.status === 'success') {
+                    messageBox.style.color = 'green';
+                    messageBox.textContent = data.message;
+                } else {
+                    messageBox.style.color = 'red';
+                    messageBox.textContent = data.message;
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        });
+        </script>
+    </div>
+
+
+      <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="https://www.facebook.com/DirectionTABiskra/"><i class="fa-brands fa-facebook"></i></a><a href="#"><i class="fa-brands fa-facebook"></i></a><a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a><a href="https://x.com/dtabiskra""><i class="fa-brands fa-twitter"></i></a></div>
+            <div class="line">
+              <ul >
+              <li ><a href="home.html">Home</a></li>
+              <li ><a href="act.html">Services</a></li>
+              <li ><a href="about.html">About</a></li>
+              <li ><a href="contact us.html">Contact Us </a></li>
+              <li ><a href="#">Privacy Policy</a></li>
+          </ul>
+          <p class="copyright">Direction of Tourism & Handicrafts © 2024</p>
+        </div>
+            
+        </footer>
+    </div>
+  
+   <script src="https://kit.fontawesome.com/b79a44cbbd.js" crossorigin="anonymous"></script>
+  </body>
+  </html>
